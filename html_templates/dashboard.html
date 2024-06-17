@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bungee Shade"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar top-bar top-bar-item">
+      <div
+        class="collapse navbar-collapse top-bar-item d-md-block"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto top-bar-item">
+          <li class="nav-item">
+            <a class="nav-link top-bar-button toggle-sidebar-button"
+              ><i class="fas fa-bars"></i
+            ></a>
+            <a class="nav-link top-bar-button toggle-schedule-button"
+              >Schedule</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar">
+          <div class="logo-dashboard">
+            <h1>1on1</h1>
+          </div>
+          <div class="sidebar-header">
+            <img src="selva.jpg" alt="Profile" width="100" height="100" />
+            <p>Welcome, Selva</p>
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link new-meeting-btn green-color"
+                href="new_meeting.html"
+                >New Meeting</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notifications.html">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meetings.html">Meetings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="logout-button" role="button"
+                >Log Out</a
+              >
+            </li>
+          </ul>
+
+          <footer class="sidebar-footer">
+            <p>Copyright &copy; 2024 by 1on1</p>
+          </footer>
+        </nav>
+
+        <div class="col-md-10 main-content">
+          <div class="row flex-nowrap mb-3">
+            <div class="col-md-9 col-12 d-flex flex-column">
+              <div class="big-box">
+                <!-- look here for calendar -->
+                <div class="calendar-header mb-3">
+                  <h4 id="month-year">February 2024</h4>
+                </div>
+                <table class="calendar-table">
+                  <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>12 Mon</th>
+                      <th>13 Tue</th>
+                      <th>14 Wed</th>
+                      <th>15 Thu</th>
+                      <th>16 Fri</th>
+                      <th>17 Sat</th>
+                      <th>18 Sun</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="time-cell" time="9 am">9 AM</td>
+                      <td class="green-color">Meeting with Mario Badr</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="9:30 am">9:30 AM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="10 am">10 AM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="blue-color" rowspan="2">
+                        Meeting with Nisarg Shah
+                      </td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="10:30 am">10:30 AM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <!-- <td class="e-cell"></td> -->
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="11 am">11 AM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="gold-color" rowspan="2">
+                        Meeting with Eleanor Stratford
+                      </td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="11:30 am">11:30 AM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <!-- <td class="e-cell"></td> -->
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="12 pm">12 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="12:30 pm">12:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="1 pm">1 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="cyan-color">Meeting with Francois Pitt</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="1:30 pm">1:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="2 pm">2 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="2:30 pm">2:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="3 pm">3 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="3:30 pm">3:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="4 pm">4 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="4:30 pm">4:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="5 pm">5 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="5:30 pm">5:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="6 pm">6 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="6:30 pm">6:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="7 pm">7 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="red-color" rowspan="2">
+                        Meeting with Julian Wexler
+                      </td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="7:30 pm">7:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <!-- <td class="e-cell"></td> -->
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="8 pm">8 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="8:30 pm">8:30 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                    <tr>
+                      <td class="time-cell" time="9 pm">9 PM</td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                      <td class="e-cell"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col-md-3 d-flex flex-column">
+              <div class="schedule h-100">
+                <div class="schedule-title">Schedule</div>
+                <div class="event-container">
+                  <div class="event green-color" mb-3 mt-3>
+                    Meeting with Mario Badr(Feb 12 9 AM) 30min
+                  </div>
+                  <div class="event cyan-color" mb-3 mt-3>
+                    Meeting with Francois Pitt(Feb 13 1 PM) 30min
+                  </div>
+                  <div class="event blue-color" mb-3 mt-3>
+                    Meeting with Nisarg Shah(Feb 14 10 AM) 60min
+                  </div>
+                  <div class="event gold-color" mb-3 mt-3>
+                    Meeting with Eleanor Stratford(Feb 14 11 AM) 60min
+                  </div>
+                  <div class="event red-color" mb-3 mt-3>
+                    Meeting with Julian Wexler(Feb 15 7PM) 60min
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="pending-meetings">
+              <div class="row">
+                <div class="col meeting gold-color" mb-3 mt-3>
+                  <h5>Pending Meeting 1</h5>
+                  <p class="ddl">Deadline: Jan 12 12:00</p>
+                  <ul>
+                    <li>Jack Sun: Responded</li>
+                    <li>David Liu: Not Responded</li>
+                  </ul>
+                </div>
+                <div class="col meeting cyan-color" mb-3 mt-3>
+                  <h5>Pending Meeting 2</h5>
+                  <p class="ddl">Deadline: Jan 12 12:00</p>
+                  <ul>
+                    <li>Emily Archer: Not Responded</li>
+                    <li>Nathan Blackwood: Not Responded</li>
+                  </ul>
+                </div>
+                <div class="col meeting green-color" mb-3 mt-3>
+                  <h5>Pending Meeting 3</h5>
+                  <p class="ddl">Deadline: Jan 12 12:00</p>
+                  <ul>
+                    <li>Isabella Cortez: Responded</li>
+                    <li>Lucas Donovan: Responded</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".toggle-sidebar-button").click(function () {
+          $(".sidebar").toggleClass("active");
+          if ($(".schedule").hasClass("active")) {
+            $(".schedule").removeClass("active");
+          }
+        });
+
+        $(".toggle-schedule-button").click(function () {
+          $(".schedule").toggleClass("active");
+          if ($(".sidebar").hasClass("active")) {
+            $(".sidebar").removeClass("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

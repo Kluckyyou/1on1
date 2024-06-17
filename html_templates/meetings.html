@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meeting</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light top-bar top-bar-item">
+  <div class="collapse navbar-collapse top-bar-item  d-md-block" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto top-bar-item">
+      <li class="nav-item">
+        <a class="nav-link top-bar-button toggle-sidebar-button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block sidebar">
+      <div class="logo-dashboard">
+        <h1>1on1</h1>
+      </div>
+      <div class="sidebar-header">
+        <img src="selva.jpg" alt="Profile" width="100" height="100">
+        <p>Welcome, Selva</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link new-meeting-btn green-color" href="new_meeting.html">New Meeting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notifications.html">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="meetings.html">Meetings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="account.html">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="logout-button" role="button">Log Out</a>
+        </li>
+      </ul>
+
+      <footer class="sidebar-footer">
+        <p>Copyright &#169 2024 by 1on1</p>
+      </footer>
+    </nav>
+
+
+
+    <!-- Place the contact content here -->
+    <!-- Contacts Content -->
+    <div class="col-md-10 main-content">
+        <div class="row">
+            <!-- Contacts Block -->
+            <div class="col-md-6">
+                <h3>Pending Meetings</h3>
+                <!-- Contact List -->
+                <div class="list-group">
+                    <!-- Contact Item -->
+                    <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 rounded">
+                        <div class="d-flex w-100 justify-content-between">
+                            <a class="me-auto" href="pending-meeting.html" style="color: inherit; text-decoration: none; display: block; position: relative;"> <!-- Use "mr-auto" for Bootstrap 4 -->
+                                <h5 class="mb-1 font-weight-bold">Pending Meeting 1</h5>
+                                <p class="ddl">Deadline: Passed</p>
+                                <p class="mb-1">Jack Sun: Responded</p>
+                                <p class="mb-1">David Liu: Responded</p>
+                            </a>
+                            <button type="button" class="btn btn-primary" onclick="location.href='custom-finalized.html';" style="height: 3em;">Finalize</button>
+                        </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 rounded">
+                        <div class="d-flex w-100 justify-content-between">
+                            <a class="me-auto" href="pending-meeting.html" style="color: inherit; text-decoration: none; display: block; position: relative;"> <!-- Use "mr-auto" for Bootstrap 4 -->
+                            <h5 class="mb-1 font-weight-bold">Pending Meeting 2</h5>
+                                <p class="ddl">Deadline: Jan 13 12:00</p>
+                                <p class="mb-1">Emily Archer: Not Responded</p>
+                                <p class="mb-1">Nathan Blackwood: Not Responded</p>
+                            </a>
+                            <button type="button" class="btn notify-btn" onclick="location.href='mailto:recipient@example.com?subject=Meeting Invitation&body=You are invited to a meeting.%0D%0A%0D%0A- Accessibility Request: Yes.%0D%0A- Appointment Length: 30 minutes%0D%0A%0D%0APlease select your preferred time at %0D%0A one-on-one/example-meeting.com';" style="height: 3em; background-color: red; color: white;">Notify</button>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 rounded">
+                       <div class="d-flex w-100 justify-content-between">
+                            <a class="me-auto" href="pending-meeting.html" style="color: inherit; text-decoration: none; display: block; position: relative;"> <!-- Use "mr-auto" for Bootstrap 4 -->
+                            <h5 class="mb-1 font-weight-bold">Pending Meeting 3</h5>
+                                <p class="ddl">Deadline: Jan 14 12:00</p>
+                                <p class="mb-1">Isabella Cortez: Responded</p>
+                                <p class="mb-1">Lucas Donovan: Responded</p>
+                            </a>
+                            <button type="button" class="btn notify-btn" onclick="location.href='mailto:recipient@example.com?subject=Meeting Invitation&body=You are invited to a meeting.%0D%0A%0D%0A- Accessibility Request: Yes.%0D%0A- Appointment Length: 30 minutes%0D%0A%0D%0APlease select your preferred time at %0D%0A one-on-one/example-meeting.com';" style="height: 3em; background-color: red; color: white;">Notify</button>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 rounded">
+                       <div class="d-flex w-100 justify-content-between">
+                            <a class="me-auto" href="pending-meeting.html" style="color: inherit; text-decoration: none; display: block; position: relative;"> <!-- Use "mr-auto" for Bootstrap 4 -->
+                                <h5 class="mb-1 font-weight-bold">Pending Meeting 4</h5>
+                                <p class="ddl">Deadline: Jan 15 12:00</p>
+                                <p class="mb-1">Margot Adler: Not Responded</p>
+                                <p class="mb-1">Theodore Kessler: Responded</p>
+                            </a>
+                            <button type="button" class="btn notify-btn" onclick="location.href='mailto:recipient@example.com?subject=Meeting Invitation&body=You are invited to a meeting.%0D%0A%0D%0A- Accessibility Request: Yes.%0D%0A- Appointment Length: 30 minutes%0D%0A%0D%0APlease select your preferred time at %0D%0A one-on-one/example-meeting.com';" style="height: 3em; background-color: red; color: white;">Notify</button>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 rounded">
+                       <div class="d-flex w-100 justify-content-between">
+                            <a class="me-auto" href="pending-meeting.html" style="color: inherit; text-decoration: none; display: block; position: relative;"> <!-- Use "mr-auto" for Bootstrap 4 -->
+                                <h5 class="mb-1 font-weight-bold">Pending Meeting 5</h5>
+                                <p class="ddl">Deadline: Jan 15 12:00</p>
+                                <p class="mb-1">Lillian Hastings: Responded</p>
+                                <p class="mb-1">Maxwell Irving: Responded</p>
+                            </a>
+                            <button type="button" class="btn notify-btn" onclick="location.href='mailto:recipient@example.com?subject=Meeting Invitation&body=You are invited to a meeting.%0D%0A%0D%0A- Accessibility Request: Yes.%0D%0A- Appointment Length: 30 minutes%0D%0A%0D%0APlease select your preferred time at %0D%0A one-on-one/example-meeting.com';" style="height: 3em; background-color: red; color: white;">Notify</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Groups Block -->
+            <div class="col-md-6">
+                <h3>Scheduled Meetings</h3>
+                <!-- Group List -->
+                <div class="list-group">
+                <!-- Group Item -->
+                    <div class="list-group-item flex-column align-items-start mb-2 rounded">
+                        <h5 class="mb-1 font-weight-bold">Meeting with Mario Badr</h5>
+                        <ul class="list-unstyled">
+                            <li><a>Time: Feb 12 8:00</a></li>
+                            <li><a>Duration: 30min</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item flex-column align-items-start mb-2 rounded">
+                        <h5 class="mb-1 font-weight-bold">Meeting with Francois Pitt</h5>
+                        <ul class="list-unstyled">
+                            <li><a>Time: Feb 13 13:00</a></li>
+                            <li><a>Duration: 60min</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item flex-column align-items-start mb-2 rounded">
+                        <h5 class="mb-1 font-weight-bold">Meeting with Nisarg Shah</h5>
+                        <ul class="list-unstyled">
+                            <li><a>Time: Feb 14 10:00</a></li>
+                            <li><a>Duration: 60min</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item flex-column align-items-start mb-2 rounded">
+                        <h5 class="mb-1 font-weight-bold">Meeting with Eleanor Stratford</h5>
+                        <ul class="list-unstyled">
+                            <li><a>Time: Feb 14 11:00</a></li>
+                            <li><a>Duration: 60min</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-group-item flex-column align-items-start mb-2 rounded">
+                        <h5 class="mb-1 font-weight-bold">Meeting with Julian Wexler</h5>
+                        <ul class="list-unstyled">
+                            <li><a>Time: Feb 15 19:00</a></li>
+                            <li><a>Duration: 30min</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".toggle-sidebar-button").click(function() {
+    $(".sidebar").toggleClass("active");
+  });
+
+  $(".toggle-schedule-button").click(function() {
+    $(".schedule").toggleClass("active");
+  });
+});
+</script>
+
+<script>
+  // Use querySelectorAll to get all elements with the class 'notify-btn',
+  // then use forEach to iterate over them and attach the event listener to each.
+  document.querySelectorAll('.notify-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      alert('All invitees that have not responded are notified!');
+    });
+  });
+</script>
+
+</body>
+</html>

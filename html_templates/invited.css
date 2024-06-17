@@ -1,0 +1,247 @@
+.container-fluid {
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: rgb(194, 199, 199);
+  }
+  
+  .datetime-selection {
+    margin-top: 20px;
+  }
+  
+  .calendar-table th, .calendar-table td {
+    text-align: center;
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    cursor: pointer;
+    word-wrap: break-word;
+    font-size: 80%;
+  }
+  
+  .calendar-table {
+    border: 2px solid #000000; /* Adjust the color and thickness as needed */
+    border-radius: 0.25rem; /* Adjust the corner radius as needed */
+    margin-top: 20px; /* This adds space above the calendar */
+    overflow: hidden; /* This ensures the rounded corners are respected by child elements */
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 30px; /* Adjust the space below the h2 heading */
+    background-color: azure;
+  }
+  
+  .calendar-header {
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    padding: 10px; /* Add some padding inside the header */
+    border-radius: 0.25rem; /* Adjust the corner radius as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .big-title {
+    font-size: 1.5rem;
+    border-radius: 0.25rem; /* Adjust the corner radius as needed */
+  }
+  .calendar-header button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+  }
+  
+  .busy-cell {
+      background-color: gray;
+      font-weight: bold;
+      color: white;
+  }
+  
+  .s-cell {
+    background-color: lightgreen;
+    font-weight: bold;
+    color: white;
+ }
+
+ .p-cell {
+  background-color: green;
+  font-weight: bold;
+  color: white;
+}
+  .appointment-summary {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .appointment-summary h3 {
+    font-size: 1.5rem;
+  }
+  
+  .appointment-summary p {
+    font-size: 1rem;
+  }
+  
+  .display-selected {
+    margin-top: 20px;
+  }
+  
+  .appointment-length {
+    margin-top: 20px;
+  }
+
+  .accessibility-request {
+    margin-top: 20px;
+  }
+  
+  /* This style will apply to the cells when they are hovered */
+  .e-cell:hover {
+    background-color: lightgreen; /* Change as needed */
+  }
+  
+  .message-for-contact {
+    margin-top: 20px;
+  }
+  
+  .final-confirmation {
+    margin-top: 20px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the container */
+    margin: 0.5rem;
+    margin-top: 20px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    transform: scale(1.5); /* Enlarges the checkbox */
+    margin-right: 10px;
+    margin-top: 1%; /* Slightly move the checkbox up (adjust value as needed) */
+  }
+  
+  /* Adjustments for the submit button */
+  button[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 12px 24px; /* Larger padding for a bigger button */
+    font-size: 1rem; /* Font size for the button text */
+    margin-left: auto; /* Push the button to the right */
+    margin-top: 10px; /* Add space above the button if needed */
+    display: block; /* Allows the use of margin auto */
+    width: 50%; /* Set the width of the button */
+    float: right; /* Align the button to the right */
+  }
+  
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for clicked cell */
+  .clicked-cell {
+    background-color: lightgreen;
+  }
+  
+  /* Style for preferred cell */
+  .preferred-cell {
+    background-color: green;
+  } 
+
+  /* Style for clicked cell */
+  .clicked-sp-cell {
+    background-color: blue;
+  }
+  
+  .preferred-cell:hover {
+    background-color: green;
+  }  
+  
+  /* Popup style */
+  .popup {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px;
+    z-index: 1;
+    border-radius: 8px; /* Rounded corners for the popup */
+  }
+  
+  /* Button style within the popup */
+  .popup button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  
+    color: white;
+    border-radius: 4px; /* Rounded corners for the buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .popup .btn-prefer {
+    background-color: #007bff; /* Bootstrap primary color for consistency */
+  }
+  
+  
+  .popup .btn-prefer:hover {
+    background-color: #0056b3; /* Darker shade on hover for better interaction feedback */
+  }
+  
+  /* Style for the Cancel button */
+  .popup .btn-cancel {
+    background-color: #dc3545; /* Bootstrap danger color for consistency */
+  }
+  
+  .popup .btn-cancel:hover {
+    background-color: #c82333; /* Slightly darker shade on hover */
+  }
+  
+  /* Custom label frame styles */
+  .label-frame {
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 0.25rem; /* Bootstrap's default border-radius value */
+    display: inline-block; /* Makes the background color wrap the text */
+    margin-right: 5px; /* Adds some spacing between labels */
+    color: white; /* White text color */
+  }
+  
+  /* Example color classes for different labels */
+  .label-frame-yellow {
+    background-color: yellowgreen; /* Bootstrap primary color */
+  }
+  
+  .label-frame-orange {
+    background-color: orange; /* Bootstrap success color */
+  }
+  
+  .label-frame-blue {
+    background-color: #17a2b8; /* Bootstrap info color */
+  }
+  
+  .label-frame-purple {
+    background-color: purple; /* Bootstrap warning color */
+  }
+  
+  .label-frame-red {
+    background-color: #dc3545; /* Bootstrap danger color */
+  }
+  
+  .label-frame-pink {
+    background-color: pink; /* Bootstrap danger color */
+  }
+
+  .label-frame-deepred {
+    color: black;
+    background-color: white;
+  }
+  
+  .label-frame-dblue {
+    background-color: rgb(3, 59, 122); /* Bootstrap danger color */
+  }
+  
+  /* Apply custom styles to the labels within the form */
+  .form-label {
+    font-weight: bold; /* If you want the labels to be bold */
+  }
+  
+  

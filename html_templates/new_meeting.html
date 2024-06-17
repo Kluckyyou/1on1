@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Meeting</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="new_meeting_style.css" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 mt-4">
+          <a href="dashboard.html" class="btn btn-primary">Back to Dashboard</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="datetime-selection">
+          <h2 class="big-title">Select date(s) and time</h2>
+          <label for="calendar" class="label-frame label-frame-blue form-label">Date(s) and time (required)</label>
+          <div class="calendar-header mb-3">
+            <button class="change-month">&lt;&lt;</button>
+            <button class="change-week">&lt;</button>
+            <h4 id="month-year">February 2024</h4>
+            <button class="change-week">&gt;</button>
+            <button class="change-month">&gt;&gt;</button>
+            </div>
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>12 Mon</th>
+                  <th>13 Tue</th>
+                  <th>14 Wed</th>
+                  <th>15 Thu</th>
+                  <th>16 Fri</th>
+                  <th>17 Sat</th>
+                  <th>18 Sun</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class = "time-cell" time="9 am">9 AM-9:30 AM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="9:30 am">9:30 AM-10 AM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="10 am">10 AM-10:30 AM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "exist-meeting" rowspan="2">Meeting with Nisarg Shah</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="10:30 am">10:30 AM-11 AM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="11 am">11 AM-11:30 AM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="11:30 am">11:30 AM-12 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="12 pm">12 PM-12:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="12:30 pm">12:30 PM-1 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="1 pm">1 PM-1:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "exist-meeting">Meeting with Francois Pitt</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="1:30 pm">1:30 PM-2 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="2 pm">2 PM-2:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="2:30 pm">2:30 PM-3 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="3 pm">3 PM-3:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="3:30 pm">3:30 PM-4 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="4 pm">4 PM-4:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="4:30 pm">4:30 PM-5 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="5 pm">5 PM-5:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="5:30 pm">5:30 PM-6 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="6 pm">6 PM-6:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="6:30 pm">6:30 PM-7 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="7 pm">7 PM-7:30 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="7:30 pm">7:30 PM-8 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="8 pm">8 PM-8:30 PM</td>
+                  <td class = "exist-meeting">Meeting with Mario Badr</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+                <tr>
+                  <td class = "time-cell" time="8:30 pm">8:30 PM-9 PM</td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                  <td class = "e-cell"></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <form action="https://postman-echo.com/post" method="POST">
+          <div class="appointment-summary">
+            <h3>Appointment summary</h3>
+            <label for="title" class="label-frame label-frame-yellow form-label">Title (required):</label>
+            <input type="text" id="title" name="title" class="form-control" required>
+          </div>
+          <div class="accessibility-request">            
+            <label for="ac" class="label-frame label-frame-purple form-label"> Accessibility Request:</label>
+            <select class="form-control" id="ac" required>
+              <option value="" disabled selected>Select your option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="appointment-length">            
+            <label for="time" class="label-frame label-frame-dblue form-label"> Appointment length (required)</label>
+            <select class="form-control" id="time" required>
+              <option value="" disabled selected>Select your option</option>
+              <option value="30">30 minutes</option>
+              <option value="60">1 hour</option>
+              <option value="90">1 hour 30 minutes</option>
+              <option value="120">2 hour</option>
+              <option value="150">2 hour 30 minutes</option>
+              <option value="180">3 hour</option>
+            </select>
+          </div>
+          <div class="select-contact"> 
+            <div class="select-individual">
+              <button type="button" class="btn label-frame label-frame-red mb-3" data-toggle="modal" data-target="#addParticipantModal">Invite Participants</button>
+            </div>
+
+            <div class="select-group">
+              <button type="button" class="btn label-frame label-frame-red mb-3" data-toggle="modal" data-target="#addGroupModal">Invite by Group</button>
+            </div>
+
+            <div class="display-selected">
+              <p><strong>Participants and Groups Selected:</strong>
+                <div id="invitees-selected" style="min-height: 50px;">
+                  <!-- Selected invitees will be shown here -->
+                </div>
+              </p>
+            </div>
+            
+          </div>
+          <div class="message-for-contact">
+            <label for="message" class="label-frame label-frame-pink form-label">Message:</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message here..."></textarea>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+              <p>By clicking "Send" you agree to our 
+              <a>terms of use</a>
+               and 
+              <a>privacy policy and acknowledge</a>
+               that the details you have provided are correct.</p>
+            </label>
+          </div>
+          <div class="final-confirmation">
+            <a href="mailto:recipient@example.com?subject=Meeting Invitation&body=You are invited to a meeting.%0D%0A%0D%0A- Accessibility Request: Yes.%0D%0A- Appointment Length: 30 minutes%0D%0A%0D%0APlease select your preferred time at %0D%0A one-on-one/example-meeting.com" class="btn btn-primary w-50 mb-5 submit-button" role="button">Submit</a>
+          </div>
+      </form> 
+      </div>
+    </div>
+  </div>
+
+<!-- Invite Contact Modal -->
+<div class="modal fade" id="addParticipantModal" tabindex="-1" role="dialog" aria-labelledby="addGroupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addGroupModalLabel">Invite Participants</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Search Field for Adding Members -->
+          <div class="form-group">
+            <label for="member-search">Search by name or email</label>
+            <input type="search" class="form-control" id="member-search" placeholder="Search for contacts...">
+          </div>
+          
+          <!-- Scrollable List for Search Results -->
+          <div id="search-results-contact" class="list-group overflow-auto" style="max-height: 150px;">
+            <!-- Pre-populated search results (static design) -->
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToContacts(this)">Mario Badr</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToContacts(this)">Alice Gao</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToContacts(this)">John Doe</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToContacts(this)">Jane Smith</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToContacts(this)">Emily Johnson</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToContacts(this)">Michael Brown</a>
+          </div>
+          
+          <!-- Contacts Added Section -->
+          <div class="form-group mt-3">
+            <label>Contacts Added</label>
+            <div id="contacts-added" class="border p-2" style="min-height: 50px;">
+              <!-- Selected contacts will be shown here -->
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="submitContacts" onclick="submitContacts()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Invite Group Modal -->
+<div class="modal fade" id="addGroupModal" tabindex="-1" role="dialog" aria-labelledby="addGroupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addGroupModalLabel">Invite Groups</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Search Field for Adding Members -->
+          <div class="form-group">
+            <label for="member-search">Search by group name</label>
+            <input type="search" class="form-control" id="member-search" placeholder="Search for groups...">
+          </div>
+          
+          <!-- Scrollable List for Search Results -->
+          <div id="search-results-group" class="list-group overflow-auto" style="max-height: 150px;">
+            <!-- Pre-populated search results (static design) -->
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToGroups(this)">Coding Tutorial</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="addToGroups(this)">CSC309</a>
+          </div>
+          
+          <!-- Contacts Added Section -->
+          <div class="form-group mt-3">
+            <label>Groups Added</label>
+            <div id="groups-added" class="border p-2" style="min-height: 50px;">
+              <!-- Selected contacts will be shown here -->
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="submitGroups" onclick="submitGroups()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cells = document.querySelectorAll('.e-cell');
+      let popup = createPopup();
+  
+      cells.forEach((cell) => {
+          cell.addEventListener("mousedown", function (event) {
+            isDragging = true;
+            event.preventDefault(); // Prevent text selection while dragging
+          });
+
+          cell.addEventListener("mousemove", function (event) {
+            if (isDragging) {
+              // Highlight the current cell
+              this.classList.add("clicked-cell");
+            }
+          });
+
+          cell.addEventListener("mouseup", function () {
+            isDragging = false;
+          });
+
+          cell.addEventListener("click", function (event) {
+            // Prevent multiple popups
+            closePopup();
+
+            // Show popup if the cell is already clicked
+            if (
+              this.classList.contains("clicked-cell") ||
+              this.classList.contains("preferred-cell")
+            ) {
+              showPopup(this, event.pageX, event.pageY);
+            } else {
+              this.classList.add("clicked-cell");
+            }
+          });
+        });
+  
+      function createPopup() {
+        let popup = document.createElement('div');
+        popup.className = 'popup';
+  
+        let cancelButton = document.createElement('button');
+        cancelButton.className = 'btn-cancel'; // Assign a class name to the Cancel button
+        cancelButton.textContent = 'Cancel';
+        cancelButton.onclick = function () {
+          if (popup.relatedCell) {
+            popup.relatedCell.classList.remove('clicked-cell', 'preferred-cell'); // Updated line
+            closePopup();
+          }
+        };
+  
+        let preferButton = document.createElement('button');
+        preferButton.className = 'btn-prefer'; // Assign a class name to the Cancel button
+        preferButton.textContent = 'Mark as Preferred';
+        preferButton.onclick = function () {
+          if (popup.relatedCell) {
+            popup.relatedCell.classList.remove('clicked-cell');
+            popup.relatedCell.classList.add('preferred-cell');
+            closePopup();
+          }
+        };
+  
+        popup.appendChild(cancelButton);
+        popup.appendChild(preferButton);
+        document.body.appendChild(popup);
+  
+        return popup;
+      }
+  
+      function showPopup(cell, x, y) {
+        popup.style.left = x + 'px';
+        popup.style.top = y + 'px';
+        popup.style.display = 'block';
+        popup.relatedCell = cell; // Link popup to the cell
+      }
+  
+      function closePopup() {
+        popup.style.display = 'none';
+        popup.relatedCell = null; // Remove link to the cell
+      }
+    });
+  </script>  
+
+<script>
+  // Helper function to create a removable item for the selected section
+  function createRemovableItem(text, onClickRemove) {
+    var itemDiv = document.createElement('div');
+    itemDiv.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'p-1', 'border-bottom');
+    
+    var itemNameSpan = document.createElement('span');
+    itemNameSpan.textContent = text;
+    itemDiv.appendChild(itemNameSpan);
+    
+    var removeButton = document.createElement('button');
+    removeButton.innerHTML = '&times;';
+    removeButton.classList.add('btn', 'btn-danger', 'btn-sm', 'ml-2');
+    removeButton.onclick = onClickRemove;
+    itemDiv.appendChild(removeButton);
+
+    return itemDiv;
+  }
+
+  // Function to handle submission of contacts
+  function submitContacts() {
+    var contactsAddedDiv = document.getElementById('contacts-added')
+    var selectedInviteesDiv = document.getElementById('invitees-selected');
+    
+    Array.from(contactsAddedDiv.children).forEach(function(contactDiv) {
+      var contactName = contactDiv.querySelector('span').textContent;
+      var removableItem = createRemovableItem(contactName, function() {
+        selectedInviteesDiv.removeChild(removableItem);
+        
+        // Create a new list item for the contact
+        var newListItem = document.createElement('a');
+        newListItem.href = "#";
+        newListItem.classList.add('list-group-item', 'list-group-item-action');
+        newListItem.textContent = removableItem.querySelector('span').textContent;
+        // Assign the same onclick function to add the contact back to the 'Contacts Added' section
+        newListItem.onclick = function() { addToContacts(newListItem); };
+      
+        // Append the contact back to the search results list
+        document.getElementById('search-results-contact').appendChild(newListItem);
+      });
+      selectedInviteesDiv.appendChild(removableItem);
+      contactsAddedDiv.removeChild(contactDiv);
+    });
+  }
+
+  // Function to handle submission of groups
+  function submitGroups() {
+    var groupsAddedDiv = document.getElementById('groups-added');
+    var selectedInviteesDiv = document.getElementById('invitees-selected');
+
+    Array.from(groupsAddedDiv.children).forEach(function(groupDiv) {
+      var groupName = groupDiv.querySelector('span').textContent;
+      var removableItem = createRemovableItem(groupName, function() {
+        selectedInviteesDiv.removeChild(removableItem);
+
+        // Create a new list item for the contact
+        var newListItem = document.createElement('a');
+        newListItem.href = "#";
+        newListItem.classList.add('list-group-item', 'list-group-item-action');
+        newListItem.textContent = removableItem.querySelector('span').textContent;
+        // Assign the same onclick function to add the contact back to the 'Contacts Added' section
+        newListItem.onclick = function() { addToGroups(newListItem); };
+
+        // Append the contact back to the search results list
+        document.getElementById('search-results-group').appendChild(newListItem);
+      });
+      selectedInviteesDiv.appendChild(removableItem);
+      groupsAddedDiv.removeChild(groupDiv);
+    });
+  }
+
+  // Function to add the clicked contact to the 'Contacts Added' section
+  function addToContacts(element) {
+    // Create a new div element to hold the contact with a remove button
+    var contactDiv = document.createElement('div');
+    contactDiv.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'p-1', 'border-bottom');
+    
+    // Span to hold the contact name
+    var contactNameSpan = document.createElement('span');
+    contactNameSpan.textContent = element.textContent;
+    contactDiv.appendChild(contactNameSpan);
+    
+    // Button to remove the contact from the 'Contacts Added' section
+    var removeButton = document.createElement('button');
+    removeButton.innerHTML = '&times;';
+    removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
+    removeButton.onclick = function() { removeContact(contactNameSpan, contactDiv, element); };
+    contactDiv.appendChild(removeButton);
+    
+    // Append the new div to the 'contacts-added' div
+    document.getElementById('contacts-added').appendChild(contactDiv);
+  
+    // Remove the contact from the search results
+    element.remove();
+  }
+
+  function addToGroups(element) {
+    // Create a new div element to hold the contact with a remove button
+    var contactDiv = document.createElement('div');
+    contactDiv.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'p-1', 'border-bottom');
+    
+    // Span to hold the contact name
+    var contactNameSpan = document.createElement('span');
+    contactNameSpan.textContent = element.textContent;
+    contactDiv.appendChild(contactNameSpan);
+    
+    // Button to remove the contact from the 'Contacts Added' section
+    var removeButton = document.createElement('button');
+    removeButton.innerHTML = '&times;';
+    removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
+    removeButton.onclick = function() { removeGroup(contactNameSpan, contactDiv, element); };
+    contactDiv.appendChild(removeButton);
+    
+    // Append the new div to the 'contacts-added' div
+    document.getElementById('groups-added').appendChild(contactDiv);
+  
+    // Remove the contact from the search results
+    element.remove();
+  }
+
+  // Function to remove the contact from the 'Contacts Added' section and add it back to the search results
+  function removeContact(contactNameSpan, contactDiv, originalElement) {
+    // Remove the contact div from the 'Contacts Added' section
+    contactDiv.remove();
+  
+    // Create a new list item for the contact
+    var newListItem = document.createElement('a');
+    newListItem.href = "#";
+    newListItem.classList.add('list-group-item', 'list-group-item-action');
+    newListItem.textContent = contactNameSpan.textContent;
+    // Assign the same onclick function to add the contact back to the 'Contacts Added' section
+    newListItem.onclick = function() { addToContacts(newListItem); };
+  
+    // Append the contact back to the search results list
+    document.getElementById('search-results-contact').appendChild(newListItem);
+  }
+
+  // Function to remove the contact from the 'Contacts Added' section and add it back to the search results
+  function removeGroup(contactNameSpan, contactDiv, originalElement) {
+    // Remove the contact div from the 'Contacts Added' section
+    contactDiv.remove();
+  
+    // Create a new list item for the contact
+    var newListItem = document.createElement('a');
+    newListItem.href = "#";
+    newListItem.classList.add('list-group-item', 'list-group-item-action');
+    newListItem.textContent = contactNameSpan.textContent;
+    // Assign the same onclick function to add the contact back to the 'Contacts Added' section
+    newListItem.onclick = function() { addToGroups(newListItem); };
+  
+    // Append the contact back to the search results list
+    document.getElementById('search-results-group').appendChild(newListItem);
+  }
+</script>
+
+<script>
+  // Use querySelectorAll to get all elements with the class 'notify-btn',
+  // then use forEach to iterate over them and attach the event listener to each.
+  document.querySelectorAll('.submit-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+      alert('All invitees are notified about the Meeting!');
+    });
+  });
+</script>
+</body>
+</html>
+

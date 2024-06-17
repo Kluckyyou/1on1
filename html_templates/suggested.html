@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggested Schedule</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bungee Shade"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function SendNoti() {
+        alert(
+          "Email Notification Sent to Paticipants: Lucas Donovan, Isabella Cortez"
+        );
+        window.location.href = "mailto:recipient@example.com?subject=Meeting Invitation&body=You are invited to a meeting.%0D%0A%0D%0A- Accessibility Request: Yes.%0D%0A- Appointment Length: 30 minutes%0D%0A%0D%0APlease select your preferred time at %0D%0A one-on-one/example-meeting.com";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container-fluid custom-bg h-100">
+      <div class="row">
+        <div class="col-md-8 mt-4">
+          <a href="custom-finalized.html" class="btn btn-primary"
+            >Continue Finalizing</a
+          >
+          <p style="color: red">
+            Mario Badr and Justin Bieber cannot be scheduled due to conflict.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="container h-100 d-flex flex-column">
+            <div class="calendar-header mb-3 d-flex justify-content-center">
+              <h4 id="month-year">Option 1</h4>
+              <button class="btn btn-primary" onclick="SendNoti()">
+                Finalize
+              </button>
+            </div>
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>12 Mon</th>
+                  <th>13 Tue</th>
+                  <th>14 Wed</th>
+                  <th>15 Thu</th>
+                  <th>16 Fri</th>
+                  <th>17 Sat</th>
+                  <th>18 Sun</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time-cell" time="9 am">9 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="9:30 am">9:30 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="10 am">10 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="green-color">Meet with Lucas Donovan</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="10:30 am">10:30 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="11 am">11 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="11:30 am">11:30 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="12 pm">12 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="12:30 pm">12:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="1 pm">1 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="1:30 pm">1:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="2 pm">2 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="2:30 pm">2:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="3 pm">3 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="3:30 pm">3:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="4 pm">4 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="4:30 pm">4:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="5 pm">5 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="5:30 pm">5:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="6 pm">6 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="6:30 pm">6:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="7 pm">7 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="green-color">Meet with Isabella Cortez</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="7:30 pm">7:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="8 pm">8 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="8:30 pm">8:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="9 pm">9 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="container h-100 d-flex flex-column">
+            <div class="calendar-header mb-3 d-flex justify-content-center">
+              <h4 id="month-year">Option 2</h4>
+              <button class="btn btn-primary" onclick="SendNoti()">
+                Finalize
+              </button>
+            </div>
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>12 Mon</th>
+                  <th>13 Tue</th>
+                  <th>14 Wed</th>
+                  <th>15 Thu</th>
+                  <th>16 Fri</th>
+                  <th>17 Sat</th>
+                  <th>18 Sun</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time-cell" time="9 am">9 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="9:30 am">9:30 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="10 am">10 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="10:30 am">10:30 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="11 am">11 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="green-color">Meet with Lucas Donovan</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="11:30 am">11:30 AM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="12 pm">12 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="12:30 pm">12:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="1 pm">1 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="green-color">Meet with Isabella Cortez</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="1:30 pm">1:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="2 pm">2 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="2:30 pm">2:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="3 pm">3 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="3:30 pm">3:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="4 pm">4 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="4:30 pm">4:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="5 pm">5 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="5:30 pm">5:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="6 pm">6 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="6:30 pm">6:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="7 pm">7 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="7:30 pm">7:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="8 pm">8 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="8:30 pm">8:30 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+                <tr>
+                  <td class="time-cell" time="9 pm">9 PM</td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                  <td class="e-cell"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

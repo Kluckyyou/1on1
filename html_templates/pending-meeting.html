@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are Invited</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="invited.css" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 mt-4">
+          <a href="meetings.html" class="btn btn-primary">Back to Meetings</a>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div id="originalCalendar" class="calendar">
+                <div class="datetime-selection">
+                    <h2 class="big-title">Current Responses</h2>
+                    <div class="calendar-header mb-3">
+                        <button class="change-month">&lt;&lt;</button>
+                        <button class="change-week">&lt;</button>
+                        <h4 id="month-year">February 2024</h4>
+                        <button class="change-week">&gt;</button>
+                        <button class="change-month">&gt;&gt;</button>
+                    </div>
+                    <table class="calendar-table">
+                    <thead>
+                        <tr>
+                        <th>Time</th>
+                        <th>12 Mon</th>
+                        <th>13 Tue</th>
+                        <th>14 Wed</th>
+                        <th>15 Thu</th>
+                        <th>16 Fri</th>
+                        <th>17 Sat</th>
+                        <th>18 Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class = "time-cell" time="9 am">9 AM-9:30 AM</td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "busy-cell" rowspan="6"></td>
+                        <td class = "busy-cell" rowspan="9"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="9:30 am">9:30 AM-10 AM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="10 am">10 AM-10:30 AM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="10:30 am">10:30 AM-11 AM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="11 am">11 AM-11:30 AM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="11:30 am">11:30 AM-12 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="12 pm">12 PM-12:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "busy-cell" rowspan="6"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="12:30 pm">12:30 PM-1 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="1 pm">1 PM-1:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="1:30 pm">1:30 PM-2 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="2 pm">2 PM-2:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="2:30 pm">2:30 PM-3 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="3 pm">3 PM-3:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="3:30 pm">3:30 PM-4 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="4 pm">4 PM-4:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="4:30 pm">4:30 PM-5 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="5 pm">5 PM-5:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="5:30 pm">5:30 PM-6 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="6 pm">6 PM-6:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="6:30 pm">6:30 PM-7 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="7 pm">7 PM-7:30 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="7:30 pm">7:30 PM-8 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="8 pm">8 PM-8:30 PM</td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="8:30 pm">8:30 PM-9 PM</td>
+                        <td class = "e-cell"></td>
+                        <td class = "e-cell"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="calendarForParticipant1" class="calendar d-none">
+                <div class="datetime-selection">
+                    <h2 class="big-title">Select date(s) and time</h2>
+                    <label for="calendar" class="label-frame label-frame-blue form-label">Date(s) and time (required)</label>
+                    <div class="calendar-header mb-3">
+                        <button class="change-month">&lt;&lt;</button>
+                        <button class="change-week">&lt;</button>
+                        <h4 id="month-year">February 2024</h4>
+                        <button class="change-week">&gt;</button>
+                        <button class="change-month">&gt;&gt;</button>
+                    </div>
+                    <table class="calendar-table">
+                    <thead>
+                        <tr>
+                        <th>Time</th>
+                        <th>12 Mon</th>
+                        <th>13 Tue</th>
+                        <th>14 Wed</th>
+                        <th>15 Thu</th>
+                        <th>16 Fri</th>
+                        <th>17 Sat</th>
+                        <th>18 Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class = "time-cell" time="9 am">9 AM-9:30 AM</td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="6"></td>
+                        <td class = "busy-cell" rowspan="9"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="9:30 am">9:30 AM-10 AM</td>
+
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="10 am">10 AM-10:30 AM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="10:30 am">10:30 AM-11 AM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="11 am">11 AM-11:30 AM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="11:30 am">11:30 AM-12 PM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="12 pm">12 PM-12:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "busy-cell" rowspan="6"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="12:30 pm">12:30 PM-1 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="1 pm">1 PM-1:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="1:30 pm">1:30 PM-2 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="2 pm">2 PM-2:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="2:30 pm">2:30 PM-3 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="3 pm">3 PM-3:30 PM</td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="3:30 pm">3:30 PM-4 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="4 pm">4 PM-4:30 PM</td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="4:30 pm">4:30 PM-5 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="5 pm">5 PM-5:30 PM</td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="5:30 pm">5:30 PM-6 PM</td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="6 pm">6 PM-6:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="6:30 pm">6:30 PM-7 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="7 pm">7 PM-7:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="7:30 pm">7:30 PM-8 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="8 pm">8 PM-8:30 PM</td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="8:30 pm">8:30 PM-9 PM</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="calendarForParticipant2" class="calendar d-none">
+                <div class="datetime-selection">
+                    <h2 class="big-title">Select date(s) and time</h2>
+                    <label for="calendar" class="label-frame label-frame-blue form-label">Date(s) and time (required)</label>
+                    <div class="calendar-header mb-3">
+                        <button class="change-month">&lt;&lt;</button>
+                        <button class="change-week">&lt;</button>
+                        <h4 id="month-year">February 2024</h4>
+                        <button class="change-week">&gt;</button>
+                        <button class="change-month">&gt;&gt;</button>
+                    </div>
+                    <table class="calendar-table">
+                    <thead>
+                        <tr>
+                        <th>Time</th>
+                        <th>12 Mon</th>
+                        <th>13 Tue</th>
+                        <th>14 Wed</th>
+                        <th>15 Thu</th>
+                        <th>16 Fri</th>
+                        <th>17 Sat</th>
+                        <th>18 Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class = "time-cell" time="9 am">9 AM-9:30 AM</td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "busy-cell" rowspan="6"></td>
+                        <td class = "busy-cell" rowspan="9"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="9:30 am">9:30 AM-10 AM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="10 am">10 AM-10:30 AM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="10:30 am">10:30 AM-11 AM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="11 am">11 AM-11:30 AM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="11:30 am">11:30 AM-12 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="12 pm">12 PM-12:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="12:30 pm">12:30 PM-1 PM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="1 pm">1 PM-1:30 PM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="1:30 pm">1:30 PM-2 PM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="2 pm">2 PM-2:30 PM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "busy-cell" rowspan="14"></td>
+                        <td class = "busy-cell" rowspan="14"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="2:30 pm">2:30 PM-3 PM</td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="3 pm">3 PM-3:30 PM</td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="3:30 pm">3:30 PM-4 PM</td>
+                        <td class = "p-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="4 pm">4 PM-4:30 PM</td>
+                        <td class = "p-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="4:30 pm">4:30 PM-5 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="5 pm">5 PM-5:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        <td class = "busy-cell" rowspan="8"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="5:30 pm">5:30 PM-6 PM</td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="6 pm">6 PM-6:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="6:30 pm">6:30 PM-7 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="7 pm">7 PM-7:30 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "busy-cell" rowspan="4"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="7:30 pm">7:30 PM-8 PM</td>
+                        <td class = "s-cell"></td>
+                        <td class = "s-cell"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="8 pm">8 PM-8:30 PM</td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        <td class = "busy-cell" rowspan="2"></td>
+                        </tr>
+                        <tr>
+                        <td class = "time-cell" time="8:30 pm">8:30 PM-9 PM</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="appointment-summary">
+                <h3 class="big-title">Appointment summary</h3>
+                <div class="big-title">
+                    <label for="title" class="label-frame label-frame-yellow form-label">Meeting with Nisarg Shah</label>
+                </div>
+                
+                <div class="accessibility-request">            
+                    <label for="ac" class="label-frame label-frame-purple form-label"> Accessibility Request:</label>
+                    <label for="ac" class="label-frame label-frame-purple form-label"> No </label>
+                </div>
+
+                <div class="appointment-length">            
+                    <label for="time" class="label-frame label-frame-dblue form-label"> Appointment Length:</label>
+                    <label for="time" class="label-frame label-frame-dblue form-label"> 30 min </label>
+                </div>
+
+                <div class="participant-list mt-4">            
+                    <label class="label-frame label-frame-deepred form-label">Schedule Received:</label>
+                    <div class="list-group" id="participantsList">
+                        <a href="#" role="button" class="list-group-item list-group-item-action" data-calendar-id="calendarForParticipant1">Mario Badr</a>
+                        <a href="#" role="button" class="list-group-item list-group-item-action" data-calendar-id="calendarForParticipant2">Alice Gao</a>
+                    </div>
+                    <button id="backToOriginalCalendar" class="btn btn-secondary mt-3">Back to My Avalibility</button>
+                </div>
+
+                <div class="participant-list mt-4">            
+                    <label class="label-frame label-frame-deepred form-label">Not yet responded:</label>
+                    <ul class="list-group" id="nonRespondersList">
+                      <li class="list-group-item">Dominic Gu</li>
+                      <li class="list-group-item">Xavier Quan</li>
+                      <!-- Add more non-responders as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cells = document.querySelectorAll('.e-cell');
+      let popup = createPopup();
+  
+      cells.forEach((cell) => {
+          cell.addEventListener("mousedown", function (event) {
+            isDragging = true;
+            event.preventDefault(); // Prevent text selection while dragging
+          });
+
+          cell.addEventListener("mousemove", function (event) {
+            if (isDragging) {
+              // Highlight the current cell
+              this.classList.add("clicked-cell");
+            }
+          });
+
+          cell.addEventListener("mouseup", function () {
+            isDragging = false;
+          });
+
+          cell.addEventListener("click", function (event) {
+            // Prevent multiple popups
+            closePopup();
+
+            // Show popup if the cell is already clicked
+            if (
+              this.classList.contains("clicked-cell") ||
+              this.classList.contains("preferred-cell")
+            ) {
+              showPopup(this, event.pageX, event.pageY);
+            } else {
+              this.classList.add("clicked-cell");
+            }
+          });
+        });
+  
+      function createPopup() {
+        let popup = document.createElement('div');
+        popup.className = 'popup';
+  
+        let cancelButton = document.createElement('button');
+        cancelButton.className = 'btn-cancel'; // Assign a class name to the Cancel button
+        cancelButton.textContent = 'Cancel';
+        cancelButton.onclick = function () {
+          if (popup.relatedCell) {
+            popup.relatedCell.classList.remove('clicked-cell', 'preferred-cell'); // Updated line
+            closePopup();
+          }
+        };
+  
+        let preferButton = document.createElement('button');
+        preferButton.className = 'btn-prefer'; // Assign a class name to the Cancel button
+        preferButton.textContent = 'Mark as Preferred';
+        preferButton.onclick = function () {
+          if (popup.relatedCell) {
+            popup.relatedCell.classList.remove('clicked-cell');
+            popup.relatedCell.classList.add('preferred-cell');
+            closePopup();
+          }
+        };
+  
+        popup.appendChild(cancelButton);
+        popup.appendChild(preferButton);
+        document.body.appendChild(popup);
+  
+        return popup;
+      }
+  
+      function showPopup(cell, x, y) {
+        popup.style.left = x + 'px';
+        popup.style.top = y + 'px';
+        popup.style.display = 'block';
+        popup.relatedCell = cell; // Link popup to the cell
+      }
+  
+      function closePopup() {
+        popup.style.display = 'none';
+        popup.relatedCell = null; // Remove link to the cell
+      }
+  
+      document.addEventListener('click', function (e) {
+        // Close the popup if clicking outside
+        if (!popup.contains(e.target)) {
+          closePopup();
+        }
+      }, true);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const participants = document.querySelectorAll('#participantsList .list-group-item');
+        const calendars = document.querySelectorAll('.calendar'); // Selects all calendar elements
+        const originalCalendar = document.getElementById('originalCalendar'); // Assuming this is the ID of the original calendar
+        const backToOriginalCalendarButton = document.getElementById('backToOriginalCalendar');
+
+        // Function to hide all calendars and show the selected one
+        function showCalendar(calendarId) {
+            calendars.forEach(calendar => {
+            calendar.classList.add('d-none'); // Hide all calendars
+            });
+            const selectedCalendar = document.getElementById(calendarId);
+            if (selectedCalendar) {
+            selectedCalendar.classList.remove('d-none'); // Show the selected calendar
+            }
+        }
+
+        // Event listeners for participant list items
+        participants.forEach(participant => {
+            participant.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default anchor action
+            const participantCalendarID = participant.getAttribute('data-calendar-id');
+            showCalendar(participantCalendarID); // Show the clicked participant's calendar
+            });
+        });
+
+        // Event listener for the 'Back to Original' button
+        backToOriginalCalendarButton.addEventListener('click', function () {
+            showCalendar('originalCalendar'); // Show the original calendar
+        });
+    });
+
+  </script>  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cells = document.querySelectorAll('.s-cell, .p-cell');
+  
+      cells.forEach((cell) => {
+          cell.addEventListener("mousedown", function (event) {
+            isDragging = true;
+            event.preventDefault(); // Prevent text selection while dragging
+          });
+
+          cell.addEventListener("mousemove", function (event) {
+            if (isDragging) {
+              // Highlight the current cell
+              this.classList.add("clicked-sp-cell");
+            }
+          });
+
+          cell.addEventListener("mouseup", function () {
+            isDragging = false;
+          });
+
+          cell.addEventListener("click", function (event) {
+            if (this.classList.contains("clicked-sp-cell")) {
+              this.classList.remove("clicked-sp-cell");
+            } else {
+              this.classList.add("clicked-sp-cell");
+            }
+          });
+      });
+    });
+  </script>  
+</body>
+</html>
+

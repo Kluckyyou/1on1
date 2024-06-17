@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light top-bar top-bar-item">
+  <div class="collapse navbar-collapse top-bar-item  d-md-block" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto top-bar-item">
+      <li class="nav-item">
+        <a class="nav-link top-bar-button toggle-sidebar-button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block sidebar">
+      <div class="logo-dashboard">
+        <h1>1on1</h1>
+      </div>
+      <div class="sidebar-header">
+        <img src="selva.jpg" alt="Profile" width="100" height="100">
+        <p>Welcome, Selva</p>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link new-meeting-btn green-color" href="new_meeting.html">New Meeting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notifications.html">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="meetings.html">Meetings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="account.html">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="logout-button" role="button">Log Out</a>
+        </li>
+      </ul>
+
+      <footer class="sidebar-footer">
+        <p>Copyright &#169 2024 by 1on1</p>
+      </footer>
+    </nav>
+
+    <div class="col-md-10">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="account">
+                        <form class="mt-4" enctype="multipart/form-data">
+                            <div class="form-group-pic text-center">
+                                <label for="profilePicInput" class="profile-pic-label">
+                                    <img src="selva.jpg" alt="Profile" width="100" height="100" class="profile-pic">
+                                    <span class="change-text">Change</span>
+                                </label>
+                                <input type="file" id="profilePicInput" name="profilePic" class="d-none">
+                            </div>
+            
+                            <div class="form-group mb-4">
+                                <label for="name" class="form-label">First Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Selva" required>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label for="name" class="form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Selva" required>
+                            </div>
+            
+                            <div class="form-group mb-4">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="selva@mail.utoronto.ca" required>
+                            </div>
+            
+                            <div class="form-group text-center mt-5">
+                                <a href="dashboard.html" class="btn btn-primary w-50" role="button">Update</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $(".toggle-sidebar-button").click(function() {
+    $(".sidebar").toggleClass("active");
+  });
+
+  $(".toggle-schedule-button").click(function() {
+    $(".schedule").toggleClass("active");
+  });
+});
+</script>
+
+
+</body>
+</html>
