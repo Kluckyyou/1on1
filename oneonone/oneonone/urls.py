@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
+from django.views.generic import TemplateView
 from .settings import MEDIA_ROOT, MEDIA_URL
 
 urlpatterns = [
@@ -31,5 +31,6 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/meeting/', include('Meeting.urls')),
     path('api/account/', include('Account.urls')),
+    path('', TemplateView.as_view(template_name='index.html')),
 
 ] + static(MEDIA_URL, document_root=MEDIA_ROOT)
